@@ -2,7 +2,6 @@ function addToCart(quantity,productName="Elma") {
     console.log("sepete eklendi: ürün: "+ productName+" adet: "+quantity)
 }
 
-//addToCart()
 addToCart(10)
 //addToCart(15)
 
