@@ -61,3 +61,8 @@ let products=[
 ]
 
 addToCart4(products)
+
+function add(number1,number2) {
+    console.log(number1+number2)
+}
+add(20,30)
