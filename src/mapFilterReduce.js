@@ -7,6 +7,8 @@ let cart=[
     {id:6, productName:"Pot", quantity:5, unitPrice:150},
 ]
 
+cart.map()
+
 function addToCart(sepet) {
     sepet.push({id:7,productName:"Ruhsat",quantity:1,unitPrice:20})
 }
