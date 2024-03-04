@@ -7,3 +7,8 @@ let cart=[
     {id:6, productName:"Pot", quantity:5, unitPrice:150},
 ]
 
+
+
+function refTest(sepet) {
+    sepet.push({id:7,productName:"Ruhsat",quantity:1,unitPrice:20})
+}
