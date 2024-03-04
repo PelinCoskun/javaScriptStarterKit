@@ -9,6 +9,17 @@ let cart=[
 
 
 
-function refTest(sepet) {
+function addToCart(sepet) {
     sepet.push({id:7,productName:"Ruhsat",quantity:1,unitPrice:20})
 }
+
+addToCart()
+
+console.log(cart)
+
+let sayi=10
+function sayiTopla(number) {
+    number+=1
+}
+sayiTopla(sayi)
+console.log(sayi)
