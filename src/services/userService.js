@@ -1,13 +1,16 @@
-export default class UserService{
-    add(user){
-        console.log("kullanıcı eklendi"+user)
+export default class UserService {
+    constructor(){
+        this.users=[]
+    }
+    add(user) {
+        this.users.push(user)
     }
 
-    list(){
-        console.log("kullanıcı listelendi")
+    list() {
+        return this.users
     }
 
-    getById(id){
-        console.log("kullanıcı eklendi")
+    getById(id) {
+       return this.users.find(u=>u.id ===id)
     }
 }
