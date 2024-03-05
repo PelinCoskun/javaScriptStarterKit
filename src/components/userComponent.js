@@ -12,3 +12,10 @@ userService.add()
 
 userService.getById(1)
 userService.list()
+
+
+
+let customer ={id:1,firstName:"Pelin"}
+
+customer.lastName="Coskun"
+console.log(customer.lastName)

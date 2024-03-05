@@ -1,5 +1,8 @@
 export default class User{
-    constructor(){
-        console.log("user oluştu")
+    constructor(id,firstName,lastName,city){
+       this.id=id
+       this.firstName=firstName
+       this.lastName=lastName
+       this.city=city
     }
 }
