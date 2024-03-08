@@ -8,8 +8,8 @@ let logger1=new MongoLogger()
 let userService = new UserService(logger1)
 
 
-let user1 = new User(1, "Pelin", "Coskun", "İstanbul")
-let user2 = new User(2, "İzel", "Coskun", "İstanbul")
+let user1 = new User(1, "Pelin", "Coskun", "İstanbul","25")
+let user2 = new User(2, "İzel", "Coskun", "İstanbul","19")
 userService.add(user1)
 userService.add(user2)
 
