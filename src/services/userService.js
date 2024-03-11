@@ -91,7 +91,7 @@ export default class UserService {
 
     //firstName->Alfabede önce geliyosa demek
     getCustomersSorted() {
-        this.customers.sort((customer1, customer2) => {
+     return this.customers.sort((customer1, customer2) => {
             if (customer1.firstName < customer2.firstName) {
                 return 1
             } else if (customer1.firstName === customer2.firstName) {
