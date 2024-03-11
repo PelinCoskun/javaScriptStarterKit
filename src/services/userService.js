@@ -55,11 +55,25 @@ checkEmployeeValidityForErors(user){
             this.errors.push(new DataError(`Validation problem. ${field} is required`,user))
         }
     }
+    if(Number.isNaN(Number.parseInt(user.age))){
+        hasErrors=true
+        this.errors.push(new DataError(`Validation problem. ${user.age} is not a number`,user))
+    }
     return hasErrors
 }
 
     add(user) {
-        //  this.users.push(user)
+        switch (user.type) {
+            case "customer":
+                this.customers.push(user)
+                break;
+                case "employee":
+                    this.employees.push(user)
+                    break;
+            default:
+                this.errors.push(new DataError("wrong user type",user))
+                break;
+        }
         this.loggerService.log(user)
     }
 
