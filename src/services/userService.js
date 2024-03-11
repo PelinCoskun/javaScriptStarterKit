@@ -18,7 +18,9 @@ export default class UserService {
                     }
                     break;
                 case "employee":
+                    if(!this.checkEmployeeValidityForErors(user)){
                     this.employees.push(user)
+                    }
                     break;
                 default:
                     this.errors.push(new DataError("wrong user type",user))
