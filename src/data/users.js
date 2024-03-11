@@ -13,7 +13,7 @@ export const users=[
         firstName:"Çado",
         lastName:"Pekto",
         city:"İstanbul",
-        age:26,
+        age:"acfasfasf26a",
         CreditCardNumber:"778456",
         salary:6000,
         type:"customer"
